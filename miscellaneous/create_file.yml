@@ -1,9 +1,0 @@
----
-- hosts: all
-  tasks:
-  - name: Ansible create file with content example
-    copy:
-      dest: "/var/www/html/index.html"
-      content: 
-        dog1
-        tiger
