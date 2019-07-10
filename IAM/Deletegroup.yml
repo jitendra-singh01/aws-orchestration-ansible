@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+      - name: Delete IAM group
+        iam:
+           iam_type: group
+           name: "{{ item }}"
+           state: absent
+        with_items:
+                - nitesh
+                - itlearn360
+
